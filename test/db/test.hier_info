@@ -1,7 +1,0 @@
-|test
-sel => data_bus.OE
-data_out => data_bus.DATAIN
-data_bus <> data_bus
-data_in <= data_in.DB_MAX_OUTPUT_PORT_TYPE
-
-
