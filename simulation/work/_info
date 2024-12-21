@@ -1,0 +1,266 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+valu
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1734768916
+!i10b 1
+!s100 EaaGb25A9[[:XFzLE[3`20
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ib^NQhIO93EIlIj6o8UANE3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/y1499/OneDrive/Desktop/SystemVerilog/simulation
+w1734733742
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv
+!i122 47
+L0 3 77
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1734768916.000000
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vControl
+R0
+R1
+!i10b 1
+!s100 RPSJzEC0P^SmKaf3bZC4B1
+R2
+IEOGYDS]`RRF^o;AG@2A3a3
+R3
+S1
+R4
+Z9 w1734563712
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv
+!i122 48
+L0 2 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv|
+!i113 1
+R7
+R8
+n@control
+vdat_mem
+R0
+R1
+!i10b 1
+!s100 6=@:I[0zVKdofFED05Fnf1
+R2
+IN=VB=aN4diaW@M_mRdboD1
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv
+!i122 49
+L0 2 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv|
+!i113 1
+R7
+R8
+vinstr_ROM
+R0
+R1
+!i10b 1
+!s100 :kG]69YILoP_Qo^^2W2UH3
+R2
+IPW[i`oKZ1=cKJBX95gcmI2
+R3
+S1
+R4
+w1734730009
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv
+!i122 50
+L0 4 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv|
+!i113 1
+R7
+R8
+ninstr_@r@o@m
+vnextPC
+R0
+R1
+!i10b 1
+!s100 odeRgQiJYlOjn@d`FYW3o2
+R2
+INf=^Jk9;i:N_<NlooBI^92
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv
+!i122 51
+L0 3 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv|
+!i113 1
+R7
+R8
+nnext@p@c
+vPC
+R0
+R1
+!i10b 1
+!s100 ?4Qn;@:^RCHVVFNdiMh2Z2
+R2
+IFleg@WnAJ5IV39l7j9K6J3
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv
+!i122 52
+L0 4 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv|
+!i113 1
+R7
+R8
+n@p@c
+vPC_LUT
+R0
+Z10 !s110 1734768917
+!i10b 1
+!s100 `0M?3cM<0miBWEmUdfB`M3
+R2
+Id6zC2:<c1>d=kc`IgJYXl0
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv
+!i122 53
+L0 1 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv|
+!i113 1
+R7
+R8
+n@p@c_@l@u@t
+vreg_file
+R0
+R10
+!i10b 1
+!s100 PNMNOeSkMiQ4Z5iR6=;>@0
+R2
+IH=PAGDDSbOXf]aI?m0O;V1
+R3
+S1
+R4
+w1734746411
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv
+!i122 54
+L0 3 33
+R5
+r1
+!s85 0
+31
+Z11 !s108 1734768917.000000
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv|
+!i113 1
+R7
+R8
+vtest_bench
+R0
+R10
+!i10b 1
+!s100 <?XbV[=jXWa9WzBCYRTZ41
+R2
+I]YTMIQMDFAQ0o4^WUZiLG1
+R3
+S1
+R4
+w1734768896
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv
+!i122 56
+Z12 L0 2 106
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv|
+!i113 1
+R7
+R8
+vtop_level
+R0
+R10
+!i10b 1
+!s100 LZP?E8HAagh_ML5l]9SiM0
+R2
+I<edTm3WLeN?`O=A>NZFn12
+R3
+S1
+R4
+w1734768345
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv
+!i122 55
+R12
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv|
+!i113 1
+R7
+R8
