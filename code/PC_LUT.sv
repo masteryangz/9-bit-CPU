@@ -5,12 +5,12 @@ module PC_LUT #(parameter D=12)(
   always_comb case(how_high)
     0: target = 2;  
     1: target = 10;//6;
-	2: target = 22;//k loop
-	3: target = -30;//-26back to k loop
-	4: target = 314;//184j loop
-	5: target = -316;//-173back to j loop
-	6: target = 346;//216i loop
-	7: target = -352;//-209back to i loop
+	2: target = 31;//k loop
+	3: target = -41;//-26back to k loop
+	4: target = 354;//184j loop
+	5: target = -358;//-173back to j loop
+	6: target = 398;//216i loop
+	7: target = -408;//-209back to i loop
 	default: target = 'b0;  // hold PC  
   endcase
 
