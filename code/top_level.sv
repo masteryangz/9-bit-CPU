@@ -71,7 +71,6 @@ module top_level(
 
   assign muxB = MemtoReg? dat_out : rslt;
   assign muxA = ldImmed? immed : muxB;
-  assign carry_in = taken?1'b0:carry_out;
   reg_file #(.pw(3)) rf1(.dat_in(muxA),
               .clk,
               .wr_en(RegWrite),
@@ -95,13 +94,12 @@ module top_level(
 			       .wr_en(MemWrite),  // stores
 			       .addr(rslt),
              .dat_out);
-  
-// registered flags from ALU
-/*
-  always_ff @(posedge clk) begin
-    if(taken) carry_in <= 1'b0;
-    else carry_in <= carry_out;
-  end*/
+
+  carry_reg cr(.clk,
+               .carry_out,
+               .branch,
+               .carry_in);
+               
   assign done = prog_ctr_out == 460;
  
 endmodule

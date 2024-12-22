@@ -17,7 +17,8 @@ module top_level(
   //		        zeroQ;                  // registered zero flag from ALU 
   logic        branch,                 // from control to PC; relative jump enable
               taken,
-              carry,
+              carry_in,
+				  carry_out,
               MemWrite,
               MemtoReg,
               ldImmed;		              // immediate switch
@@ -34,6 +35,8 @@ module top_level(
   assign ALUOp = mach_code[8:6];
   assign immed = mach_code[2:0];
   assign how_high = mach_code[2:0];
+  //initial carry_in = 0;
+  //initial carry_out = 0;
 // fetch subassembly
   PC #(.D(D)) 					  // D sets program counter width
      pc1 (.clk              ,
@@ -68,43 +71,36 @@ module top_level(
 
   assign muxB = MemtoReg? dat_out : rslt;
   assign muxA = ldImmed? immed : muxB;
-  
+  //assign carry_in = branch?1'b0:carry_out;
   reg_file #(.pw(3)) rf1(.dat_in(muxA),
               .clk,
               .wr_en(RegWrite),
               .rd_addrA,
               .rd_addrB,
-              .taken,
               .wr_addr(rd_addrA),      // in place operation
               .datA,
-              .datB,
-              .carry); 
+              .datB); 
 
 
   alu alu1(.ALUOp,
            .inA(datA),
 		       .inB(datB),
-		       .carry_in(carry),
+		       .carry_in,
 		       .rslt,
            .taken,
-           .carry_out(carry));  
+           .carry_out);  
 
   dat_mem dm(.dat_in(datA)  ,  // from reg_file
              .clk           ,
 			       .wr_en(MemWrite),  // stores
 			       .addr(rslt),
              .dat_out);
-
+  
 // registered flags from ALU
-/*
-  always_ff @(posedge clk) begin
-    //pariQ <= pari;
-	 //zeroQ <= zero;
-    //if(sc_clr) sc_in <= 'b0;
-    //else if(sc_en) sc_in <= sc_o;
-  end
-  */
 
+  always_ff @(posedge clk) begin
+    carry_in <= branch?1'b0:carry_out;
+  end
   assign done = prog_ctr_out == 460;
  
 endmodule

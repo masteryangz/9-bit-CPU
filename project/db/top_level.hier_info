@@ -2,8 +2,9 @@
 clk => PC:pc1.clk
 clk => reg_file:rf1.clk
 clk => dat_mem:dm.clk
+clk => carry_reg:cr.clk
 start => nextPC:np.start
-done << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+done <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_level|PC:pc1
@@ -424,5 +425,12 @@ dat_out[4] <= core.DATAOUT4
 dat_out[5] <= core.DATAOUT5
 dat_out[6] <= core.DATAOUT6
 dat_out[7] <= core.DATAOUT7
+
+
+|top_level|carry_reg:cr
+clk => carry_in~reg0.CLK
+carry_out => carry_in.DATAA
+branch => carry_in.OUTPUTSELECT
+carry_in <= carry_in~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
