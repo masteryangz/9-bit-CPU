@@ -22,7 +22,8 @@ add r7 r5             #r7 = 66
 jmp r5 000            #reset carry
 add r7 r5             #r7 = 65
 jmp r5 000            #reset carry
-add r7 r5             #r7 = 64(setup phase ends)
+add r7 r5             #r7 = 64
+jmp r5 000            #reset carry(setup phase ends)
 xor r2 r5             #r2 = ~r2(i loop jump back to here)
 add r2 r6             #r2 = r2+1(-i)
 jmp r5 000            #reset carry
@@ -437,7 +438,6 @@ ld r1 000             #r1 = 0
 ld r2 000             #r2 = 0
 ld r3 000             #r3 = 0
 ld r4 000             #r4 = 0
-ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop

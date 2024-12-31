@@ -22,7 +22,8 @@
 101101000 //reset carry
 010111101 //r7 = 65
 101101000 //reset carry
-010111101 //r7 = 64(setup phase ends)
+010111101 //r7 = 64
+101101000 //reset carry(setup phase ends)
 100010101 //r2 = ~r2(i loop jump back to here)
 010010110 //r2 = r2+1(-i)
 101101000 //reset carry
@@ -437,7 +438,6 @@
 000010000 //r2 = 0
 000011000 //r3 = 0
 000100000 //r4 = 0
-000110001 //nop
 000110001 //nop
 000110001 //nop
 000110001 //nop

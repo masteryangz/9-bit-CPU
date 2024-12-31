@@ -11,32 +11,32 @@ cModel Technology
 dC:/intelFPGA/20.1
 valu
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1734851448
+!s110 1734996934
 !i10b 1
-!s100 EaaGb25A9[[:XFzLE[3`20
+!s100 7<jV<zZS4]lH<>:H<[7>d1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ib^NQhIO93EIlIj6o8UANE3
+I_EGe1NgB`8?7ZGX[dnPRl0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z3 dC:/Users/y1499/OneDrive/Desktop/SystemVerilog/simulation
-w1734733742
+w1734992892
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv
-!i122 150
-L0 3 77
+!i122 216
+L0 3 76
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1734851448.000000
+Z5 !s108 1734996934.000000
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/alu.sv|
 !i113 1
-Z5 o-work work -sv
-Z6 tCvgOpt 0
+Z6 o-work work -sv
+Z7 tCvgOpt 0
 vcarry_reg
 R0
-!s110 1734851450
+Z8 !s110 1734996935
 !i10b 1
 !s100 C>E@g0[o?<ad>0A^bXFG32
 R1
@@ -47,21 +47,21 @@ R3
 w1734828004
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/carry_reg.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/carry_reg.sv
-!i122 160
+!i122 225
 L0 1 11
 R4
 r1
 !s85 0
 31
-Z7 !s108 1734851449.000000
+Z9 !s108 1734996935.000000
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/carry_reg.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/carry_reg.sv|
 !i113 1
-R5
 R6
+R7
 vControl
 R0
-Z8 !s110 1734851449
+R8
 !i10b 1
 !s100 RPSJzEC0P^SmKaf3bZC4B1
 R1
@@ -69,21 +69,21 @@ IEOGYDS]`RRF^o;AG@2A3a3
 R2
 S1
 R3
-Z9 w1734563712
+Z10 w1734563712
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv
-!i122 151
+!i122 217
 L0 2 40
 R4
 r1
 !s85 0
 31
-R7
+R5
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv|
 !i113 1
-R5
 R6
+R7
 n@control
 vdat_mem
 R0
@@ -95,21 +95,21 @@ IN=VB=aN4diaW@M_mRdboD1
 R2
 S1
 R3
-R9
+R10
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv
-!i122 152
+!i122 218
 L0 2 18
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/dat_mem.sv|
 !i113 1
-R5
 R6
+R7
 vinstr_ROM
 R0
 R8
@@ -123,18 +123,18 @@ R3
 w1734730009
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv
-!i122 153
+!i122 219
 L0 4 13
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv|
 !i113 1
-R5
 R6
+R7
 ninstr_@r@o@m
 vnextPC
 R0
@@ -146,21 +146,21 @@ INf=^Jk9;i:N_<NlooBI^92
 R2
 S1
 R3
-R9
+R10
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv
-!i122 154
+!i122 220
 L0 3 17
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv|
 !i113 1
-R5
 R6
+R7
 nnext@p@c
 vPC
 R0
@@ -172,21 +172,21 @@ IFleg@WnAJ5IV39l7j9K6J3
 R2
 S1
 R3
-R9
+R10
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv
-!i122 155
+!i122 221
 L0 4 11
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv|
 !i113 1
-R5
 R6
+R7
 n@p@c
 vPC_LUT
 R0
@@ -201,18 +201,18 @@ R3
 w1734849709
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv
-!i122 156
+!i122 222
 L0 1 17
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC_LUT.sv|
 !i113 1
-R5
 R6
+R7
 n@p@c_@l@u@t
 vreg_file
 R0
@@ -227,43 +227,43 @@ R3
 w1734746411
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv
-!i122 157
+!i122 223
 L0 3 33
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv|
 !i113 1
-R5
 R6
+R7
 vtest_bench
 R0
-R8
+!s110 1734996936
 !i10b 1
-!s100 <?XbV[=jXWa9WzBCYRTZ41
+!s100 [8nbQmXD;LAFd[:2NK@IH3
 R1
-I]YTMIQMDFAQ0o4^WUZiLG1
+IHIDB;>6HHLoMWT^d:jWl?2
 R2
 S1
 R3
-w1734768896
-8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv
-FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv
-!i122 159
-L0 2 106
+w1734991060
+8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program2/test_bench2_new.sv
+FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program2/test_bench2_new.sv
+!i122 226
+L0 3 112
 R4
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv|
+!s108 1734996936.000000
+!s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program2/test_bench2_new.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program2/test_bench2_new.sv|
 !i113 1
-R5
 R6
+R7
 vtop_level
 R0
 R8
@@ -277,15 +277,15 @@ R3
 w1734828150
 8C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv
 FC:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv
-!i122 158
+!i122 224
 L0 2 104
 R4
 r1
 !s85 0
 31
-R7
+R9
 !s107 C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv|
 !i113 1
-R5
 R6
+R7

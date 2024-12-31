@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Dec 21 16:44:08 2024
+Mon Dec 23 14:29:27 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -52,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 21 16:44:08 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 23 14:29:27 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; top_level                                      ;
 ; Top-level Entity Name              ; top_level                                      ;
 ; Family                             ; Cyclone IV E                                   ;
-; Total logic elements               ; 4,155                                          ;
-;     Total combinational functions  ; 2,060                                          ;
+; Total logic elements               ; 4,115                                          ;
+;     Total combinational functions  ; 2,020                                          ;
 ;     Dedicated logic registers      ; 2,125                                          ;
 ; Total registers                    ; 2125                                           ;
 ; Total pins                         ; 3                                              ;
@@ -199,17 +199,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,155     ;
+; Estimated Total logic elements              ; 4,115     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2060      ;
+; Total combinational functions               ; 2020      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1713      ;
+;     -- 4 input functions                    ; 1683      ;
 ;     -- 3 input functions                    ; 317       ;
-;     -- <=2 input functions                  ; 30        ;
+;     -- <=2 input functions                  ; 20        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2030      ;
-;     -- arithmetic mode                      ; 30        ;
+;     -- normal mode                          ; 1992      ;
+;     -- arithmetic mode                      ; 28        ;
 ;                                             ;           ;
 ; Total registers                             ; 2125      ;
 ;     -- Dedicated logic registers            ; 2125      ;
@@ -221,7 +221,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 2125      ;
-; Total fan-out                               ; 14261     ;
+; Total fan-out                               ; 14096     ;
 ; Average fan-out                             ; 3.40      ;
 +---------------------------------------------+-----------+
 
@@ -231,16 +231,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
-; |top_level                 ; 2060 (21)           ; 2125 (0)                  ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |top_level               ; top_level   ; work         ;
+; |top_level                 ; 2020 (18)           ; 2125 (0)                  ; 0           ; 0            ; 0       ; 0         ; 3    ; 0            ; |top_level               ; top_level   ; work         ;
 ;    |Control:ctl1|          ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|Control:ctl1  ; Control     ; work         ;
 ;    |PC:pc1|                ; 12 (12)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|PC:pc1        ; PC          ; work         ;
-;    |PC_LUT:pl1|            ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|PC_LUT:pl1    ; PC_LUT      ; work         ;
-;    |alu:alu1|              ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|alu:alu1      ; alu         ; work         ;
+;    |PC_LUT:pl1|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|PC_LUT:pl1    ; PC_LUT      ; work         ;
+;    |alu:alu1|              ; 53 (53)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|alu:alu1      ; alu         ; work         ;
 ;    |carry_reg:cr|          ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|carry_reg:cr  ; carry_reg   ; work         ;
 ;    |dat_mem:dm|            ; 1648 (1648)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|dat_mem:dm    ; dat_mem     ; work         ;
-;    |instr_ROM:ir1|         ; 220 (220)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|instr_ROM:ir1 ; instr_ROM   ; work         ;
+;    |instr_ROM:ir1|         ; 179 (179)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|instr_ROM:ir1 ; instr_ROM   ; work         ;
 ;    |nextPC:np|             ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|nextPC:np     ; nextPC      ; work         ;
-;    |reg_file:rf1|          ; 89 (89)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_file:rf1  ; reg_file    ; work         ;
+;    |reg_file:rf1|          ; 91 (91)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|reg_file:rf1  ; reg_file    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -252,7 +252,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 2125  ;
 ; Number of registers using Synchronous Clear  ; 12    ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 2112  ;
@@ -260,16 +260,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |top_level|PC:pc1|prog_ctr_out[1] ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top_level|muxA[3]                ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_level|muxA[0]                ;
-; 8:1                ; 6 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; No         ; |top_level|alu:alu1|Mux7          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top_level|muxA[3]         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top_level|muxA[0]         ;
+; 8:1                ; 6 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; No         ; |top_level|alu:alu1|Mux7   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -360,21 +359,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 3                           ;
 ; cycloneiii_ff         ; 2125                        ;
 ;     ENA               ; 2112                        ;
-;     SCLR SLD          ; 12                          ;
+;     SCLR              ; 12                          ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 2060                        ;
-;     arith             ; 30                          ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 18                          ;
-;     normal            ; 2030                        ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 299                         ;
-;         4 data inputs ; 1713                        ;
+; cycloneiii_lcell_comb ; 2020                        ;
+;     arith             ; 28                          ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 20                          ;
+;     normal            ; 1992                        ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 297                         ;
+;         4 data inputs ; 1683                        ;
 ;                       ;                             ;
-; Max LUT depth         ; 21.60                       ;
-; Average LUT depth     ; 12.65                       ;
+; Max LUT depth         ; 23.60                       ;
+; Average LUT depth     ; 13.66                       ;
 +-----------------------+-----------------------------+
 
 
@@ -383,7 +382,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -393,7 +392,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Sat Dec 21 16:43:53 2024
+    Info: Processing started: Mon Dec 23 14:29:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top_level -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -426,7 +425,7 @@ Warning (10230): Verilog HDL assignment warning at PC_LUT.sv(13): truncated valu
 Info (12128): Elaborating entity "nextPC" for hierarchy "nextPC:np" File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv Line: 58
 Warning (10230): Verilog HDL assignment warning at nexPC.sv(16): truncated value with size 32 to match size of target (12) File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/nexPC.sv Line: 16
 Info (12128): Elaborating entity "instr_ROM" for hierarchy "instr_ROM:ir1" File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/top_level.sv Line: 61
-Warning (10850): Verilog HDL warning at instr_ROM.sv(12): number of words (461) in memory file does not match the number of elements in the address range [0:4095] File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv Line: 12
+Warning (10850): Verilog HDL warning at instr_ROM.sv(12): number of words (460) in memory file does not match the number of elements in the address range [0:4095] File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv Line: 12
 Warning (10030): Net "core.data_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv Line: 8
 Warning (10030): Net "core.waddr_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv Line: 8
 Warning (10030): Net "core.we_a" at instr_ROM.sv(8) has no driver or initial value, using a default initial value '0' File: C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv Line: 8
@@ -444,14 +443,14 @@ Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File 
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4174 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4134 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 4171 logic cells
+    Info (21061): Implemented 4131 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Sat Dec 21 16:44:08 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 4817 megabytes
+    Info: Processing ended: Mon Dec 23 14:29:27 2024
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:18
 
 

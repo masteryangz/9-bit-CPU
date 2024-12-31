@@ -48,9 +48,8 @@ always_comb begin
 		sc_o      = ina[7];
       end*/
     3'b100: begin// bitwise XOR
-	    rslt = inA ^ inB;
+      {carry_out, rslt} = inA ^ inB + carry_in;
       taken = 1'b0;
-      carry_out = 1'b0;
     end
 	  3'b101: begin//beq
       rslt = 8'b0000_0000;

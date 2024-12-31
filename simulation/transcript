@@ -1,6 +1,47 @@
+# Compile of alu.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of nexPC.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of test_bench_new.sv was successful.
+# Compile of carry_reg.sv was successful.
+# 11 compiles, 0 failed with no errors.
 vsim -gui work.test_bench
 # vsim -gui work.test_bench 
-# Start time: 21:13:36 on Dec 21,2024
+# Start time: 13:55:54 on Dec 23,2024
+# Loading sv_std.std
+# Loading work.test_bench
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.nextPC
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.dat_mem
+# Loading work.carry_reg
+# Compile of alu.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of nexPC.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of test_bench2_new.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.test_bench
+# End time: 13:58:10 on Dec 23,2024, Elapsed time: 0:02:16
+# Errors: 0, Warnings: 5
+# vsim -gui work.test_bench 
+# Start time: 13:58:10 on Dec 23,2024
 # Loading sv_std.std
 # Loading work.test_bench
 # Loading work.top_level
@@ -26,42 +67,44 @@ add wave  \
 {sim:/test_bench/D1/dm/core[70]} \
 {sim:/test_bench/D1/dm/core[71]} \
 {sim:/test_bench/D1/dm/core[72]} \
-{sim:/test_bench/D1/dm/core[73]}
+{sim:/test_bench/D1/dm/core[73]} \
+{sim:/test_bench/D1/dm/core[74]} \
+{sim:/test_bench/D1/dm/core[75]}
 run -all
-#           0:  0000000000000000
-#           1:  0000000000000001
-#           2:  0000000000000011
-#           3:  0000000000000111
-#           4:  0000000000001111
-#           5:  0000000000011111
-#           6:  0000000000111111
-#           7:  0000000001111111
-#           8:  0000000011111111
-#           9:  0000000111111111
-#          10:  0000001111111111
-#          11:  0000011111111111
-#          12:  0000111111111111
-#          13:  0001111111111111
-#          14:  0011111111111111
-#          15:  0111111111111111
-#          16:  1111111111111111
-#          17:  1111111111111110
-#          18:  1111111111111100
-#          19:  1111111111111000
-#          20:  1111111111110000
-#          21:  1111111111100000
-#          22:  1111111111000000
-#          23:  1111111110000000
-#          24:  1111111100000000
-#          25:  1111111000000000
-#          26:  1111110000000000
-#          27:  1111100000000000
-#          28:  1111000000000000
-#          29:  1110000000000000
-#          30:  1100000000000000
-#          31:  1000000000000000
+#           0:       0
+#           1:       1
+#           2:       3
+#           3:       7
+#           4:      15
+#           5:      31
+#           6:      63
+#           7:     127
+#           8:     255
+#           9:     511
+#          10:    1023
+#          11:    2047
+#          12:    4095
+#          13:    8191
+#          14:   16383
+#          15:   32767
+#          16:      -1
+#          17:      -2
+#          18:      -4
+#          19:      -8
+#          20:     -16
+#          21:     -32
+#          22:     -64
+#          23:    -128
+#          24:    -256
+#          25:    -512
+#          26:   -1024
+#          27:   -2048
+#          28:   -4096
+#          29:   -8192
+#          30:  -16384
+#          31:  -32768
 # Break key hit
-# Break in Module reg_file in file C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv
+# Break in Module PC at C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/PC.sv line 12
 # Compile of alu.sv was successful.
 # Compile of Control.sv was successful.
 # Compile of dat_mem.sv was successful.
@@ -71,104 +114,14 @@ run -all
 # Compile of PC_LUT.sv was successful.
 # Compile of reg_file.sv was successful.
 # Compile of top_level.sv was successful.
-# Compile of test_bench_new.sv was successful.
 # Compile of carry_reg.sv was successful.
-# 11 compiles, 0 failed with no errors.
-# Compile of alu.sv was successful.
-# Compile of Control.sv was successful.
-# Compile of dat_mem.sv was successful.
-# Compile of instr_ROM.sv was successful.
-# Compile of nexPC.sv was successful.
-# Compile of PC.sv was successful.
-# Compile of PC_LUT.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of top_level.sv was successful.
-# Compile of test_bench_new.sv was successful.
-# Compile of carry_reg.sv was successful.
+# Compile of test_bench2_new.sv was successful.
 # 11 compiles, 0 failed with no errors.
 vsim -gui work.test_bench
-# End time: 22:17:48 on Dec 21,2024, Elapsed time: 1:04:12
-# Errors: 0, Warnings: 3
-# vsim -gui work.test_bench 
-# Start time: 22:17:48 on Dec 21,2024
-# Loading sv_std.std
-# Loading work.test_bench
-# Loading work.top_level
-# Loading work.PC
-# Loading work.PC_LUT
-# Loading work.nextPC
-# Loading work.instr_ROM
-# Loading work.Control
-# Loading work.reg_file
-# Loading work.alu
-# Loading work.dat_mem
-# Loading work.carry_reg
-add wave sim:/test_bench/D1/*
-add wave  \
-sim:/test_bench/D1/rf1/core
-add wave  \
-{sim:/test_bench/D1/dm/core[64]} \
-{sim:/test_bench/D1/dm/core[65]} \
-{sim:/test_bench/D1/dm/core[66]} \
-{sim:/test_bench/D1/dm/core[67]} \
-{sim:/test_bench/D1/dm/core[68]} \
-{sim:/test_bench/D1/dm/core[69]} \
-{sim:/test_bench/D1/dm/core[70]} \
-{sim:/test_bench/D1/dm/core[71]} \
-{sim:/test_bench/D1/dm/core[72]} \
-{sim:/test_bench/D1/dm/core[73]}
-run -all
-#           0:  0000000000000000
-#           1:  0000000000000001
-#           2:  0000000000000011
-#           3:  0000000000000111
-#           4:  0000000000001111
-#           5:  0000000000011111
-#           6:  0000000000111111
-#           7:  0000000001111111
-#           8:  0000000011111111
-#           9:  0000000111111111
-#          10:  0000001111111111
-#          11:  0000011111111111
-#          12:  0000111111111111
-#          13:  0001111111111111
-#          14:  0011111111111111
-#          15:  0111111111111111
-#          16:  1111111111111111
-#          17:  1111111111111110
-#          18:  1111111111111100
-#          19:  1111111111111000
-#          20:  1111111111110000
-#          21:  1111111111100000
-#          22:  1111111111000000
-#          23:  1111111110000000
-#          24:  1111111100000000
-#          25:  1111111000000000
-#          26:  1111110000000000
-#          27:  1111100000000000
-#          28:  1111000000000000
-#          29:  1110000000000000
-#          30:  1100000000000000
-#          31:  1000000000000000
-# Break key hit
-# Break in Module reg_file at C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/reg_file.sv line 27
-# Compile of alu.sv was successful.
-# Compile of Control.sv was successful.
-# Compile of dat_mem.sv was successful.
-# Compile of instr_ROM.sv was successful.
-# Compile of nexPC.sv was successful.
-# Compile of PC.sv was successful.
-# Compile of PC_LUT.sv was successful.
-# Compile of reg_file.sv was successful.
-# Compile of top_level.sv was successful.
-# Compile of test_bench_new.sv was successful.
-# Compile of carry_reg.sv was successful.
-# 11 compiles, 0 failed with no errors.
-vsim -gui work.test_bench
-# End time: 22:42:37 on Dec 21,2024, Elapsed time: 0:24:49
+# End time: 14:09:54 on Dec 23,2024, Elapsed time: 0:11:44
 # Errors: 0, Warnings: 2
 # vsim -gui work.test_bench 
-# Start time: 22:42:37 on Dec 21,2024
+# Start time: 14:09:54 on Dec 23,2024
 # Loading sv_std.std
 # Loading work.test_bench
 # Loading work.top_level
@@ -194,42 +147,44 @@ add wave  \
 {sim:/test_bench/D1/dm/core[70]} \
 {sim:/test_bench/D1/dm/core[71]} \
 {sim:/test_bench/D1/dm/core[72]} \
-{sim:/test_bench/D1/dm/core[73]}
+{sim:/test_bench/D1/dm/core[73]} \
+{sim:/test_bench/D1/dm/core[74]} \
+{sim:/test_bench/D1/dm/core[75]}
 run -all
-#           0:  0000000000000000
-#           1:  0000000000000001
-#           2:  0000000000000011
-#           3:  0000000000000111
-#           4:  0000000000001111
-#           5:  0000000000011111
-#           6:  0000000000111111
-#           7:  0000000001111111
-#           8:  0000000011111111
-#           9:  0000000111111111
-#          10:  0000001111111111
-#          11:  0000011111111111
-#          12:  0000111111111111
-#          13:  0001111111111111
-#          14:  0011111111111111
-#          15:  0111111111111111
-#          16:  1111111111111111
-#          17:  1111111111111110
-#          18:  1111111111111100
-#          19:  1111111111111000
-#          20:  1111111111110000
-#          21:  1111111111100000
-#          22:  1111111111000000
-#          23:  1111111110000000
-#          24:  1111111100000000
-#          25:  1111111000000000
-#          26:  1111110000000000
-#          27:  1111100000000000
-#          28:  1111000000000000
-#          29:  1110000000000000
-#          30:  1100000000000000
-#          31:  1000000000000000
+#           0:       0
+#           1:       1
+#           2:       3
+#           3:       7
+#           4:      15
+#           5:      31
+#           6:      63
+#           7:     127
+#           8:     255
+#           9:     511
+#          10:    1023
+#          11:    2047
+#          12:    4095
+#          13:    8191
+#          14:   16383
+#          15:   32767
+#          16:      -1
+#          17:      -2
+#          18:      -4
+#          19:      -8
+#          20:     -16
+#          21:     -32
+#          22:     -64
+#          23:    -128
+#          24:    -256
+#          25:    -512
+#          26:   -1024
+#          27:   -2048
+#          28:   -4096
+#          29:   -8192
+#          30:  -16384
+#          31:  -32768
 # Break key hit
-# Simulation stop requested.
+# Break in Module instr_ROM at C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/instr_ROM.sv line 14
 # Compile of alu.sv was successful.
 # Compile of Control.sv was successful.
 # Compile of dat_mem.sv was successful.
@@ -239,14 +194,26 @@ run -all
 # Compile of PC_LUT.sv was successful.
 # Compile of reg_file.sv was successful.
 # Compile of top_level.sv was successful.
-# Compile of test_bench_new.sv was successful.
 # Compile of carry_reg.sv was successful.
+# Compile of test_bench2_new.sv was successful.
+# 11 compiles, 0 failed with no errors.
+# Compile of alu.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of nexPC.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of test_bench_new.sv was successful.
 # 11 compiles, 0 failed with no errors.
 vsim -gui work.test_bench
-# End time: 23:11:00 on Dec 21,2024, Elapsed time: 0:28:23
-# Errors: 0, Warnings: 2
+# End time: 15:13:53 on Dec 23,2024, Elapsed time: 1:03:59
+# Errors: 0, Warnings: 5
 # vsim -gui work.test_bench 
-# Start time: 23:11:00 on Dec 21,2024
+# Start time: 15:13:53 on Dec 23,2024
 # Loading sv_std.std
 # Loading work.test_bench
 # Loading work.top_level
@@ -259,20 +226,6 @@ vsim -gui work.test_bench
 # Loading work.alu
 # Loading work.dat_mem
 # Loading work.carry_reg
-add wave sim:/test_bench/D1/*
-add wave  \
-sim:/test_bench/D1/rf1/core
-add wave  \
-{sim:/test_bench/D1/dm/core[64]} \
-{sim:/test_bench/D1/dm/core[65]} \
-{sim:/test_bench/D1/dm/core[66]} \
-{sim:/test_bench/D1/dm/core[67]} \
-{sim:/test_bench/D1/dm/core[68]} \
-{sim:/test_bench/D1/dm/core[69]} \
-{sim:/test_bench/D1/dm/core[70]} \
-{sim:/test_bench/D1/dm/core[71]} \
-{sim:/test_bench/D1/dm/core[72]} \
-{sim:/test_bench/D1/dm/core[73]}
 run -all
 #           0:  0000000000000000
 #           1:  0000000000000001
@@ -657,5 +610,85 @@ run -all
 # ** Note: $stop    : C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv(96)
 #    Time: 482469350 ns  Iteration: 0  Instance: /test_bench
 # Break in Module test_bench at C:/Users/y1499/OneDrive/Desktop/SystemVerilog/test benches/program1/test_bench_new.sv line 96
-# End time: 23:13:30 on Dec 21,2024, Elapsed time: 0:02:30
+# Compile of alu.sv was successful.
+# Compile of Control.sv was successful.
+# Compile of dat_mem.sv was successful.
+# Compile of instr_ROM.sv was successful.
+# Compile of nexPC.sv was successful.
+# Compile of PC.sv was successful.
+# Compile of PC_LUT.sv was successful.
+# Compile of reg_file.sv was successful.
+# Compile of top_level.sv was successful.
+# Compile of carry_reg.sv was successful.
+# Compile of test_bench2_new.sv was successful.
+# 11 compiles, 0 failed with no errors.
+vsim -gui work.test_bench
+# End time: 15:35:48 on Dec 23,2024, Elapsed time: 0:21:55
+# Errors: 0, Warnings: 4
+# vsim -gui work.test_bench 
+# Start time: 15:35:48 on Dec 23,2024
+# Loading sv_std.std
+# Loading work.test_bench
+# Loading work.top_level
+# Loading work.PC
+# Loading work.PC_LUT
+# Loading work.nextPC
+# Loading work.instr_ROM
+# Loading work.Control
+# Loading work.reg_file
+# Loading work.alu
+# Loading work.dat_mem
+# Loading work.carry_reg
+add wave sim:/test_bench/D1/*
+add wave  \
+sim:/test_bench/D1/rf1/core
+add wave  \
+{sim:/test_bench/D1/dm/core[64]} \
+{sim:/test_bench/D1/dm/core[65]} \
+{sim:/test_bench/D1/dm/core[66]} \
+{sim:/test_bench/D1/dm/core[67]} \
+{sim:/test_bench/D1/dm/core[68]} \
+{sim:/test_bench/D1/dm/core[69]} \
+{sim:/test_bench/D1/dm/core[70]} \
+{sim:/test_bench/D1/dm/core[71]} \
+{sim:/test_bench/D1/dm/core[72]} \
+{sim:/test_bench/D1/dm/core[73]} \
+{sim:/test_bench/D1/dm/core[74]} \
+{sim:/test_bench/D1/dm/core[75]}
+run -all
+#           0:       0
+#           1:       1
+#           2:       3
+#           3:       7
+#           4:      15
+#           5:      31
+#           6:      63
+#           7:     127
+#           8:     255
+#           9:     511
+#          10:    1023
+#          11:    2047
+#          12:    4095
+#          13:    8191
+#          14:   16383
+#          15:   32767
+#          16:      -1
+#          17:      -2
+#          18:      -4
+#          19:      -8
+#          20:     -16
+#          21:     -32
+#          22:     -64
+#          23:    -128
+#          24:    -256
+#          25:    -512
+#          26:   -1024
+#          27:   -2048
+#          28:   -4096
+#          29:   -8192
+#          30:  -16384
+#          31:  -32768
+# Break key hit
+# Break in Module Control at C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/Control.sv line 7
+# End time: 15:54:27 on Dec 23,2024, Elapsed time: 0:18:39
 # Errors: 0, Warnings: 1
