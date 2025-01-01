@@ -129,6 +129,26 @@ jmp r5 000            #reset carry
 add r7 r5             #r7 = len(n)
 jmp r5 000            #reset carry
 pos r5 011            #jump back to first k loop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 ld r0 111             #r0 = 7
 add r7 r0             #r7 = len(n)+7
 sw r3 r7              #mem[71] = r3(setBits)
@@ -204,6 +224,26 @@ jmp r5 000            #reset carry
 add r7 r5             #r7 = len(n)
 jmp r5 000            #reset carry
 pos r5 011            #jump back to second k loop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 lw r0 r7              #r0 = mem[64](min)
 xor r0 r5             #r0 = ~r0
 add r0 r6             #r0 = r0+1(-min)
@@ -396,29 +436,6 @@ ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 pos r5 101            #jump back to j for loop
 ld r2 011             #r2 = 3
 add r7 r2             #r7 = len(n)+3
@@ -438,23 +455,6 @@ ld r1 000             #r1 = 0
 ld r2 000             #r2 = 0
 ld r3 000             #r3 = 0
 ld r4 000             #r4 = 0
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
