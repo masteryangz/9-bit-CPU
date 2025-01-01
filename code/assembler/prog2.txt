@@ -60,7 +60,7 @@ lw r1 r1              #r1 = n[j+1]
 add r7 r6             #r7 = 72
 add r7 r6             #r7 = 73
 lw r4 r7              #r4 = 'b1000_0000
-pos r2 001            #if n[i]>=0:
+pos r2 010            #if n[i]>=0:
 xor r1 r5             #r1 = ~r1
 add r1 r6             #r1 = -n[j+1]
 xor r0 r5             #r0 = -n[j]
@@ -68,6 +68,12 @@ jmp r5 000            #reset carry
 add r3 r1             #r3 = n[i+1]-n[j+1]
 add r2 r0             #r2 = n[i]-n[j]
 jmp r5 000            #reset carry
+pos r2 000            #if n[i]-n[j]>=0:
+pos r5 001            #else if n[i]-n[j]<0:
+xor r3 r5             #r3 = ~r3
+add r3 r6             #r3 = abs(n[i+1]-n[j+1])
+xor r2 r5             #r2 = abs(n[i]-n[j])
+jmp r5 000            #reset carry
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
@@ -76,7 +82,34 @@ ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
-pos r5 001            #else if n[i]<0:
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+pos r5 010            #else if n[i]<0:
 xor r3 r5             #r3 = ~r3
 add r3 r6             #r3 = -n[i+1]
 xor r2 r5             #r2 = -n[i]
@@ -84,6 +117,41 @@ jmp r5 000            #reset carry
 add r3 r1             #r3 = n[j+1]-n[i+1]
 add r2 r0             #r2 = n[j]-n[i]
 jmp r5 000            #reset carry
+pos r2 000            #if n[i]-n[j]>=0:
+pos r5 001            #else if n[i]-n[j]<0:
+xor r3 r5             #r3 = ~r3
+add r3 r6             #r3 = abs(n[i+1]-n[j+1])
+xor r2 r5             #r2 = abs(n[i]-n[j])
+jmp r5 000            #reset carry
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
@@ -203,6 +271,13 @@ ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 add r7 r6             #r7 = 67
 add r7 r6             #r7 = 68
 lw r0 r7              #r0 = maxMSB
@@ -225,6 +300,25 @@ add r7 r6             #r7 = 69
 sw r3 r7              #mem[69] = update maxLSB
 add r7 r5             #r7 = 68
 jmp r5 000            #reset carry
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
@@ -278,6 +372,34 @@ ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 ld r3 011             #r3 = 3
 add r7 r3             #r7 = 71
 lw r3 r7              #r3 = j
@@ -289,259 +411,9 @@ xor r4 r5             #r4 = ~r4
 add r4 r6             #r4 = r4+1(-7)
 jmp r5 000            #reset carry
 add r7 r4             #r7 = 64
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 pos r5 101            #jump back to j for loop
+ld r0 110             #r0 = 6
+add r7 r0             #r7 = 70
 lw r2 r7              #r2 = i
 add r2 r6             #i+=1
 add r2 r6             #i+=1
@@ -551,44 +423,12 @@ xor r4 r5             #r4 = ~r4
 add r4 r6             #r4 = r4+1(-6)
 jmp r5 000            #reset carry
 add r7 r4             #r7 = 64
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 pos r5 111            #jump back to i for loop
 ld r0 000             #r0 = 0
 ld r1 000             #r1 = 0
 ld r2 000             #r2 = 0
 ld r3 000             #r3 = 0
 ld r4 000             #r4 = 0
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop

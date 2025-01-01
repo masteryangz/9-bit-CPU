@@ -1,6 +1,7 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
@@ -8,3 +9,283 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/21.1
+valu
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1735686618
+!i10b 1
+!s100 7<jV<zZS4]lH<>:H<[7>d1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[U;6YgF=@5<FZaSmNz_RK1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code
+w1734992892
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/alu.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/alu.sv
+!i122 33
+L0 3 76
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1735686618.000000
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/alu.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vcarry_reg
+R0
+R1
+!i10b 1
+!s100 C>E@g0[o?<ad>0A^bXFG32
+R2
+Ijan_Y8VVJGUQJJY=h_ShS3
+R3
+S1
+R4
+w1734828004
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/carry_reg.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/carry_reg.sv
+!i122 34
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/carry_reg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/carry_reg.sv|
+!i113 1
+R7
+R8
+vControl
+R0
+R1
+!i10b 1
+!s100 RPSJzEC0P^SmKaf3bZC4B1
+R2
+ImcdZ@UX[cJfkWL6GaKDm<2
+R3
+S1
+R4
+Z9 w1734563712
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/Control.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/Control.sv
+!i122 35
+L0 2 40
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/Control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/Control.sv|
+!i113 1
+R7
+R8
+n@control
+vdat_mem
+R0
+R1
+!i10b 1
+!s100 6=@:I[0zVKdofFED05Fnf1
+R2
+I>A^VBVc`LVd2A3FEUoRWM1
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/dat_mem.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/dat_mem.sv
+!i122 36
+L0 2 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/dat_mem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/dat_mem.sv|
+!i113 1
+R7
+R8
+vinstr_ROM
+R0
+Z10 !s110 1735686619
+!i10b 1
+!s100 JjYQ^1V7mIoDbUbg`nn<41
+R2
+In937m<h7<bR[fCaT1LM`[1
+R3
+S1
+R4
+w1735686606
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/instr_ROM.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/instr_ROM.sv
+!i122 37
+L0 4 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/instr_ROM.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/instr_ROM.sv|
+!i113 1
+R7
+R8
+ninstr_@r@o@m
+vnextPC
+R0
+R10
+!i10b 1
+!s100 odeRgQiJYlOjn@d`FYW3o2
+R2
+IkDgKT9R2J[TMAHHHY`7B;1
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/nexPC.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/nexPC.sv
+!i122 38
+L0 3 17
+R5
+r1
+!s85 0
+31
+Z11 !s108 1735686619.000000
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/nexPC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/nexPC.sv|
+!i113 1
+R7
+R8
+nnext@p@c
+vPC
+R0
+R10
+!i10b 1
+!s100 ?4Qn;@:^RCHVVFNdiMh2Z2
+R2
+I2D2^n<4LGafgXW0OO=4SM1
+R3
+S1
+R4
+R9
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC.sv
+!i122 39
+L0 4 11
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC.sv|
+!i113 1
+R7
+R8
+n@p@c
+vPC_LUT
+R0
+R10
+!i10b 1
+!s100 b9mhe=6`8AzEiJ1L_dHeZ3
+R2
+IJaGMZkz^j]HdRfCJC^MRI1
+R3
+S1
+R4
+w1735684409
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC_LUT.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC_LUT.sv
+!i122 40
+L0 1 17
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC_LUT.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/PC_LUT.sv|
+!i113 1
+R7
+R8
+n@p@c_@l@u@t
+vreg_file
+R0
+R10
+!i10b 1
+!s100 PNMNOeSkMiQ4Z5iR6=;>@0
+R2
+IN;X9mIMFM9[18ERAV[c>O2
+R3
+S1
+R4
+w1734746411
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/reg_file.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/reg_file.sv
+!i122 41
+L0 3 33
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/reg_file.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/reg_file.sv|
+!i113 1
+R7
+R8
+vtest_bench
+R0
+R10
+!i10b 1
+!s100 :CkJ_7RFd:8MOVQ1anfBm3
+R2
+I=h:0MIlYCX1nNDD:[INCD2
+R3
+S1
+R4
+w1735686335
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv
+!i122 43
+L0 3 112
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv|
+!i113 1
+R7
+R8
+vtop_level
+R0
+R10
+!i10b 1
+!s100 fC5f2dBQVUMM1cK;<L@fb0
+R2
+IARa<]2Vd0Z2jUh[N6?_QN2
+R3
+S1
+R4
+w1734828150
+8C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/top_level.sv
+FC:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/top_level.sv
+!i122 42
+L0 2 104
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/top_level.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/top_level.sv|
+!i113 1
+R7
+R8

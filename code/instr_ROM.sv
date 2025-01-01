@@ -9,7 +9,7 @@ module instr_ROM #(parameter D=12)(
   initial							    // load the program
     // $readmemb("C:/Users/y1499/OneDrive/Desktop/cse141l/code/mach_code.txt",core);
     //$readmemb("D:/cse141l/code/mach_code.txt",core);
-    $readmemb("C:/Users/y1499/OneDrive/Desktop/SystemVerilog/code/mach_code.txt",core);
+    $readmemb("C:/Users/y1499/OneDrive/Desktop/9 bit CPU/code/mach_code.txt",core);
 
   always_comb  mach_code = core[prog_ctr_out];
 
