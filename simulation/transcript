@@ -1237,3 +1237,5 @@ run -all
 # ** Note: $stop    : C:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv(103)
 #    Time: 472036350 ns  Iteration: 0  Instance: /test_bench
 # Break in Module test_bench at C:/Users/y1499/OneDrive/Desktop/9 bit CPU/test benches/program2/test_bench2_new.sv line 103
+# End time: 14:08:00 on Jan 01,2025, Elapsed time: 0:04:22
+# Errors: 0, Warnings: 1
