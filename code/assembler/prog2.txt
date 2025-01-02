@@ -424,25 +424,25 @@ xor r4 r5             #r4 = ~r4
 add r4 r6             #r4 = r4+1(-6)
 jmp r5 000            #reset carry
 add r7 r4             #r7 = 64
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
+ld r6 001             #nop
 pos r5 111            #jump back to i for loop
 ld r0 000             #r0 = 0
 ld r1 000             #r1 = 0
 ld r2 000             #r2 = 0
 ld r3 000             #r3 = 0
 ld r4 000             #r4 = 0
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
-ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop
 ld r6 001             #nop

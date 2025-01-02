@@ -1,4 +1,4 @@
-# 141L Term Project
+# 9 bit CPU
 
 ### Detailed report is in the pdf file ```https://docs.google.com/document/d/15BGWQznVsZe_yZr11onejnUM6LPMR10BYVu8Cv4QQF4/edit?usp=sharing```
 
@@ -6,7 +6,6 @@
 ## Working Programs
 - **Program 1:** worked as expected. output file in ```\test benches\program1\output_log.txt```
 - **Program 2:** worked as expected. output file in ```\test benches\program2\output_log.txt```
-- **Program 3:** worked as expected. output file in ```\test benches\program3\output_log.txt```
 
 
 
